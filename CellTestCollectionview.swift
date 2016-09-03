@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import LTMorphingLabel
 
 //protocol GuideCVCDelegate {
 //    func likeButtonDidPress(cell: GuideCVC, button: UIButton)
@@ -17,8 +17,8 @@ import UIKit
 class CellTestCollectionview: UICollectionViewCell {
     
     @IBOutlet weak var testImage: UIImageView!
-    @IBOutlet weak var numberOnImage: UILabel!
-    
+    @IBOutlet weak var numberOnImage: LTMorphingLabel!
+    var cellDidntPress = true
     override func prepareForReuse() {
         super.prepareForReuse()
 
